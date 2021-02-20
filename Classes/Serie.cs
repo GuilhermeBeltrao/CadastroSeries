@@ -36,5 +36,20 @@ namespace CadastroSeries
         {
             this.IsDeleted = true;
         }
+
+        public int ReturnId()
+        {
+            return this.Id;
+        }
+
+        public string ReturnTitle()
+        {
+            return this.Title;
+        }
+        public bool ReturnIsDeleted()
+        {
+            return this.IsDeleted;
+        }
+
     }
 }

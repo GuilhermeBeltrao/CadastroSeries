@@ -5,35 +5,35 @@ namespace CadastroSeries
 {
     public class SerieRepository : IRepository<Serie>
     {
-        private List<Serie> serieList = new List<Serie>();
+        private List<Serie> listSeries = new List<Serie>();
         public void Add(Serie entity)   // DONE
         {
-            serieList.Add(entity);
+            listSeries.Add(entity);
         }
 
         public List<Serie> List()   // DONE       
         {
-            return serieList;
+            return listSeries;
         }
 
         public int NextId()    // DONE
         {
-            return serieList.Count;
+            return listSeries.Count;
         }
 
         public void Remove(int id)    // DONE 
         {
-            serieList[id].Remove();
+            listSeries[id].Remove();
         }
 
         public Serie ReturnById(int id)    // DONE
         {
-            return serieList[id];
+            return listSeries[id];
         }
 
         public void Update(int id, Serie entity)    // DONE
         {
-            serieList[id] = entity;
+            listSeries[id] = entity;
         }
     }
 }
